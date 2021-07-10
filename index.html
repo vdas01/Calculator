@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_div">
+        <h2>Calculator</h2>
+        <form action="" name="form">
+            <input type="text" name="screen" id="screen" value="" id="screen">
+            <div class="layer1 layers">
+            <input type="button" value="C" class="buttons" onclick="form.screen.value='' ">
+            <input type="button" value="D" class="buttons" onclick="form.screen.value=  ">
+            <input type="button" value="%" class="buttons" onclick="form.screen.value+='%' ">
+            <input type="button" value="/" class="buttons" onclick="form.screen.value+='/' ">
+        </div>
+        <div class="layer2 layers">
+            <input type="button" value="7" class="buttons" onclick="form.screen.value+='7' ">
+            <input type="button" value="8" class="buttons" onclick="form.screen.value+='8' ">
+            <input type="button" value="9" class="buttons" onclick="form.screen.value+='9' ">
+            <input type="button" value="X" class="buttons" onclick="form.screen.value+='*' ">
+        </div>
+        <div class="layer3 layers">
+            <input type="button" value="4" class="buttons" onclick="form.screen.value+='4' ">
+            <input type="button" value="5" class="buttons" onclick="form.screen.value+='5' ">
+            <input type="button" value="6" class="buttons" onclick="form.screen.value+='6' ">
+            <input type="button" value="-" class="buttons" onclick="form.screen.value+='-' ">
+        </div>
+        <div class="layer4 layers">
+            <input type="button" value="1" class="buttons" onclick="form.screen.value+='1' ">
+            <input type="button" value="2" class="buttons" onclick="form.screen.value+='2' ">
+            <input type="button" value="3" class="buttons" onclick="form.screen.value+='3' ">
+            <input type="button" value="+" class="buttons" onclick="form.screen.value+='+' ">
+        </div>
+        <div class="layer5 layers">
+            <input type="button" value="0" class="buttons" onclick="form.screen.value+='0' ">
+            <input type="button" value="." class="buttons" onclick="form.screen.value+='.' ">
+            <input type="button" value="=" class="buttons" onclick="form.screen.value= eval(form.screen.value )">
+        </div>
+        </form>
+    </div>
+    <script>
+     clear(e){
+         let s = e;
+         let len = s.length;
+         s.clear(len-1);
+         e+=s;
+     }
+    </script>
+</body>
+</html>

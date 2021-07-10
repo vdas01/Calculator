@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(110,45,45);
+    background: linear-gradient(8deg, rgba(110,45,45,1) 44%, rgba(210,206,206,1) 80%);
+}
+.main_div{
+    text-align: center;
+    border: 2px solid black;
+    display: inline-block;
+    height: fit-content;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    border-radius: 13px;
+    box-shadow: 5px 5px 2px rgb(44, 42, 42);
+}
+h2{
+    margin: 4px 0px;
+    font-size: 42px;
+    background: rgb(110,104,45);
+background: linear-gradient(0deg, rgba(110,104,45,1) 44%, rgba(50,0,0,1) 80%);
+color: crimson;
+text-shadow: 2px 2px 2px black;
+}
+#screen{
+    font-size: 20px;
+    width: 300px;
+    height: 45px;
+    padding: 10px;
+    margin: 4px 4px;
+}
+.buttons{
+    width: 51px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px black;
+}
+.layers:not(:last-child){
+    margin-bottom: 6px;
+}
+.layers:first-child{
+    margin-top: 9px;
+}
+.layer1 .buttons:not(:last-child){
+    background-color: rgb(95, 25, 136);
+    border: 2px solid rgb(95, 25, 136);
+    color: white;
+}
+.layer1 .buttons:not(:last-child):hover{
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid whitesmoke;
+    width: 58px;
+}
+.buttons:last-child{
+    background-color: orange;
+    color: white;
+    border: 2px solid orange;
+}
+.buttons:last-child:hover{
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid whitesmoke;
+    width: 58px;
+}
+.layers:not(:first-child) .buttons:not(:last-child){
+    background-color: rgb(37, 37, 37);
+    color: white;
+    border: 2px solid black;
+    /* box-shadow: 2px 2px 2px whitesmoke; */
+}
+.layers:not(:first-child) .buttons:not(:last-child):hover{
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid whitesmoke;
+    width: 58px;
+}
+.layer5 .buttons{
+    width: 80px;
+    padding: 4px;
+    font-size: 22px;
+}
+.layers .buttons:not(:last-child){
+    margin-right: 12px;
+}
